@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.app > div {
+  width: 100%;
+}
+
+.app .title {
+  margin-top: 0;
+}
+
+.app__filter {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.app .search-filter {
+  margin-right: 1rem;
+}
+
+.app .gender-filter {
+  margin-right: 1rem;
+}
+
+.app .table-pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
