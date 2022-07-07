@@ -16,6 +16,8 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import CircularProgress from "@mui/material/CircularProgress";
+import Backdrop from "@mui/material/Backdrop";
 import { styled } from "@mui/system";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -37,6 +39,7 @@ function DataTable() {
   const gender = useSelector((state) => state.filter.gender);
   const sortBy = useSelector((state) => state.filter.sortBy);
   const sortOrder = useSelector((state) => state.filter.sortOrder);
+  const isLoading = useSelector((state) => state.users.isLoading);
 
   const toggleSort = (toggleSortBy) => {
     let toggleSortOrder = sortOrder;
@@ -73,7 +76,18 @@ function DataTable() {
   }, [page, search, gender, sortBy, sortOrder]);
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
+      <Backdrop
+        sx={{
+          color: "#fff",
+          position: "absolute",
+          zIndex: (theme) => theme.zIndex.drawer + 1,
+        }}
+        open={isLoading}
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
+
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -103,8 +117,8 @@ function DataTable() {
                   sortOrder={sortOrder}
                 />
               </StyledTableCell>
-              <StyledTableCell>Gender</StyledTableCell>
-              <StyledTableCell>Registered Date</StyledTableCell>
+              <TableCell sx={{ fontWeight: 600 }}>Gender</TableCell>
+              <TableCell sx={{ fontWeight: 600 }}>Registered Date</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
