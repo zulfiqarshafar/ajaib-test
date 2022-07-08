@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muhammad Zulfiqar Shafar",
   "license": "ISC",
   "homepage": "https://zulfiqarshafar.github.io/ajaib-test",
   "dependencies": {
