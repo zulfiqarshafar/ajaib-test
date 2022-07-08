@@ -11,7 +11,6 @@ import DataTable from "./components/DataTable";
 import GenderSelection from "./components/GenderSelection";
 import SearchBox from "./components/SearchBox";
 import TablePagination from "./components/TablePagination";
-
 import Button from "@mui/material/Button";
 import "./App.css";
 
@@ -28,7 +27,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">User Data</h1>
+      <h1 className="app__title">User Data</h1>
       <div className="app__filter">
         <SearchBox />
         <GenderSelection />

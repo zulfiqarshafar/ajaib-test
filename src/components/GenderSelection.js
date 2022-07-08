@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setGender } from "../features/filter/filterSlice";
-
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -18,10 +17,10 @@ function GenderSelection() {
   return (
     <div className="gender-filter">
       <FormControl sx={{ minWidth: 120 }} size="small">
-        <InputLabel id="demo-simple-select-label">Gender</InputLabel>
+        <InputLabel id="gender-filter__select-label">Gender</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
+          labelId="gender-filter__select-label"
+          id="gender-filter__select"
           value={gender}
           label="Gender"
           onChange={handleChange}

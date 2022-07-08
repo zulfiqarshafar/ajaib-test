@@ -7,7 +7,6 @@ import {
   setPageTotal,
 } from "../features/pagination/paginationSlice";
 import { convertDateTime, generateSearchParams } from "../utils/helper";
-
 import TableCellContent from "./TableCellContent";
 import TableContainer from "@mui/material/TableContainer";
 import Table from "@mui/material/Table";
