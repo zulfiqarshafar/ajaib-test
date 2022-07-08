@@ -2,10 +2,12 @@
 
 This personal project is a website that contains a table with data acquired from <a href="https://randomuser.me/documentation">Random User Generator</a>. Main functionalities of the website is search functionality, filtering data by gender, pagination, sort data by column, and reset filter. It is built mainly using React JS and Redux.
 
+<br>
 ## Live Preview
 
 Project is lived at <a href="https://zulfiqarshafar.github.io/ajaib-test/">zulfiqarshafar.github.io/ajaib-test</a>
 
+<br>
 ## Table of Contents
 
 - [Features](#features)
@@ -14,6 +16,7 @@ Project is lived at <a href="https://zulfiqarshafar.github.io/ajaib-test/">zulfi
   - [Installation](#installation)
   - [Run](#run)
 
+<br>
 ## Features
 
 - Search by keyword
@@ -25,6 +28,7 @@ Project is lived at <a href="https://zulfiqarshafar.github.io/ajaib-test/">zulfi
   - Email
 - Reset filter
 
+<br>
 ## Dependencies
 
 Here is the full list of dependencies
@@ -55,6 +59,7 @@ Here is the full list of dependencies
   }
 ```
 
+<br>
 ## Setup
 
 To run the website locally, you could start by cloning the repo to your local machine using git clone.
@@ -75,8 +80,4 @@ To run the website on the browser use
 npm run start
 ```
 
-and the website will run locally at
-
-```
-http://localhost:3000
-```
+and the website will run locally at http://localhost:3000
